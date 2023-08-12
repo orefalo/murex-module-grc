@@ -1,0 +1,35 @@
+function _grc_wrap -a cmd
+
+    # if grc exists
+    if {which grc} then { echo abc }
+    
+    if command -s grc > /dev/null
+        # if grc_wrap_commands defined
+        if set -q grc_wrap_commands
+            # 
+            if not builtin contains -- "$cmd" $grc_wrap_commands
+                return
+            end
+        end
+
+        function "$cmd" -V cmd -w "$cmd"
+            set -l options "grc_wrap_options_$cmd"
+            command grc -es --colour=auto "$cmd" $$options $argv
+        end
+    end
+end
+
+_grc_wrap ifconfig
+_grc_wrap cvs
+_grc_wrap df
+_grc_wrap diff
+_grc_wrap dig
+_grc_wrap g++
+_grc_wrap gcc
+_grc_wrap ifconfig
+_grc_wrap make
+_grc_wrap mount
+_grc_wrap mtr
+_grc_wrap ping
+_grc_wrap tail
+_grc_wrap traceroute
