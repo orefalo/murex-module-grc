@@ -1,14 +1,15 @@
-# murex-module-grc -WIP
+# murex-module-grc
 
-Attempts to auto-set the JAVA_HOME environment variable and PATH
+Colorizer for commands such as make,mount,traceroute,ping..etc
 
 ## Install
 
 ```shell
-murex-package: install https://github.com/orefalo/murex-module-grc.git
+murex-package install https://github.com/orefalo/murex-module-grc.git
 ```
 
 ## Update
 
 ```shell
-murex-package: update
+murex-package update
+```
