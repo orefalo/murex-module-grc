@@ -1,13 +1,13 @@
 [
-	{
-		"Name": "grc",
-		"Summary": "colorizer for commands such as make,mount,traceroute,ping..etc",
-		"Version": "1.0",
-		"Source": "grc.mx",
-		"Dependencies": {
-			"Optional": [],
-			"Required": [grc],
-			"Platform": [ "posix" ]
-		}
-	}
+  {
+    "Name": "grc",
+    "Summary": "colorizer for commands such as make,mount,traceroute,ping..etc",
+    "Version": "1.0",
+    "Source": "grc.mx",
+    "Dependencies": {
+      "Optional": [],
+      "Required": ["grc"],
+      "Platform": ["posix"]
+    }
+  }
 ]

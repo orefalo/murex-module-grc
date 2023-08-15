@@ -1,11 +1,11 @@
-function _grc_wrap -a cmd
-    if command -s grc > /dev/null
-        function "$cmd" -V cmd -w "$cmd"
-            set -l options "grc_wrap_options_$cmd"
-            command grc -es --colour=auto "$cmd" $$options $argv
-        end
-    end
-end
+function _grc_wrap (cmd: str) {
+
+    grc_path = which(grc)
+    
+    if { $grc_path -> f +x } then {
+         command grc -es --colour=auto $cmd $PARAMS
+    }
+}
 
 # cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff
 _grc_wrap ifconfig
