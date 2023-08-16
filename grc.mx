@@ -12,7 +12,7 @@
     alias ifconfig=_grc_wrap ifconfig
     alias df=_grc_wrap df
     alias diff=_grc_wrap diff
-    alias g++=_grc_wrap g++
+    #alias g++=_grc_wrap g++
     alias gcc=_grc_wrap gcc
     alias ifconfig=_grc_wrap ifconfig
     alias make=_grc_wrap make
