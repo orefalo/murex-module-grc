@@ -9,6 +9,7 @@
     }
 
     # cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff
+    alias ps=_grc_wrap ps
     alias ifconfig=_grc_wrap ifconfig
     alias df=_grc_wrap df
     alias diff=_grc_wrap diff
