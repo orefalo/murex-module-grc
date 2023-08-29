@@ -3,7 +3,7 @@
 
     function _grc_wrap {
         grc_path = which(grc)
-        if { g $grc_path -> f -d +x } then {
+        if { g $grc_path -> f +x } then {
             command grc -es --colour=auto @PARAMS
         }
     }
