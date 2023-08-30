@@ -1,26 +1,22 @@
 
- if { $SELF.Interactive } then {
-
-    function _grc_wrap {
-        grc_path = which(grc)
-        if { g $grc_path -> f +x } then {
-            command grc -es --colour=auto @PARAMS
-        }
+function _grc_wrap {
+    grc_path = which(grc)
+    if { g $grc_path -> f +x } then {
+        command grc -es --colour=auto @PARAMS
     }
+}
 
-    # cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff
-    alias ps=_grc_wrap ps
-    alias ifconfig=_grc_wrap ifconfig
-    alias df=_grc_wrap df
-    alias diff=_grc_wrap diff
-    #alias g++=_grc_wrap g++
-    alias gcc=_grc_wrap gcc
-    alias ifconfig=_grc_wrap ifconfig
-    alias make=_grc_wrap make
-    alias mount=_grc_wrap mount
-    alias mtr=_grc_wrap mtr
-    alias ps=_grc_wrap ps
-    alias tail=_grc_wrap tail
-    alias traceroute=_grc_wrap traceroute
-
- }
+# cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff
+alias ps=_grc_wrap ps
+alias ifconfig=_grc_wrap ifconfig
+alias df=_grc_wrap df
+alias diff=_grc_wrap diff
+#alias g++=_grc_wrap g++
+alias gcc=_grc_wrap gcc
+alias ifconfig=_grc_wrap ifconfig
+alias make=_grc_wrap make
+alias mount=_grc_wrap mount
+alias mtr=_grc_wrap mtr
+alias ps=_grc_wrap ps
+alias tail=_grc_wrap tail
+alias traceroute=_grc_wrap traceroute
